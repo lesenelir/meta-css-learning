@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>绝对定位中的两栏设计</title>
+    <style>
+      html , body {
+        /*两栏设计，左侧固定，右侧随着浏览器自适应*/
+        height: 100%;
+        margin: 0;
+        /*没有滚动条*/
+        overflow-y: hidden;
+      }
+
+      .right {
+        height: 100%;
+        /*利用margin-left撑开内容*/
+        margin-left: 300px;
+        background-color: green;
+      }
+
+      .left {
+        /*绝对定位，相对于window进行定位*/
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        background-color: orange;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="left"></div>
+    <div class="right"></div>
+  </body>
+</html>

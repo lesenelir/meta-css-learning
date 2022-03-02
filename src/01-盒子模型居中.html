@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>盒子模型居中</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        /*外层盒子固定设置padding值，内层盒子宽高100%，使得内部盒子居中*/
+        /*此时盒子的可视区域为162px = 内部宽高 + padding + border*/
+        padding: 30px;
+        border: 1px solid #000;
+      }
+
+      .box .box1 {
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box1"></div>
+    </div>
+  </body>
+</html>

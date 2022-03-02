@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>高度塌陷</title>
+    <style>
+      .box {
+        width: 300px;
+        border: 10px solid #000000;
+      }
+
+      /*清除浮动另外一种方法 伪元素 （伪元素默认是一个行内元素） */
+      .box::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+
+      /*块级元素无法识别浮动元素*/
+      .box .inner-box {
+        float: left;
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1 {
+        background-color: green;
+      }
+
+      .box2 {
+        background-color: orange;
+       }
+
+      /*.clearfix {*/
+      /*  clear: both;*/
+      /*}*/
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inner-box box1"></div>
+      <div class="inner-box box2"></div>
+      <p class="clearfix"></p>
+    </div>
+  </body>
+</html>

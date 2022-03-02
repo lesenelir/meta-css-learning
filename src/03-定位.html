@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+      .box1 {
+        position: absolute;
+        /*z-index 是指向我们眼睛的图层，数值越大，越朝向我们眼睛*/
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+      }
+
+      .box2 {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>
