@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>align-items</title>
+
+    <style>
+      #myDiv {
+        display: flex;
+        /*更换主轴*/
+        /*flex-direction: column;*/
+        width: 800px;
+        height: 400px;
+        background-color: pink;
+        /*主轴居中*/
+        justify-content: center;
+        /*侧轴居中*/
+        align-items: center;
+      }
+
+      div span {
+        width: 150px;
+        height: 100px;
+        background-color: purple;
+        margin: 10px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="myDiv">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>flex体验</title>
+    <style>
+      #myDiv {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+      }
+
+      div span {
+        /*width: 150px;*/
+        height: 100px;
+        background-color: purple;
+        margin-right: 5px;
+        flex: 1;
+      }
+      /* div是flex容器，span是flex项目 */
+
+    </style>
+  </head>
+  <body>
+    <div id="myDiv">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+
+  </body>
+</html>
